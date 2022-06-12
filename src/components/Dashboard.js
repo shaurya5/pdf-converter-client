@@ -106,7 +106,7 @@ function Dashboard() {
     localStorage.setItem("data", data);
 
     axios
-      .post("https://pdf-converter0.herokuapp.com//create", {
+      .post("https://pdf-converter0.herokuapp.com/create", {
         dataInputs: data1,
         refNo: finalData.refNo,
         date: finalData.date,
