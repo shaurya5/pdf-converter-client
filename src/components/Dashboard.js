@@ -94,7 +94,7 @@ function Dashboard() {
     )
   }
 
-  function handleClick(event) {
+  async function handleClick(event) {
     event.preventDefault();
     const products = { dataInputs };
     const finalData = {
@@ -105,7 +105,7 @@ function Dashboard() {
     localStorage.setItem("refNo", data.refNo);
     localStorage.setItem("data", data);
 
-    axios
+    await axios
       .post("https://pdf-converter0.herokuapp.com/create", {
         dataInputs: data1,
         refNo: finalData.refNo,
@@ -120,8 +120,8 @@ function Dashboard() {
         priceBasis: finalData.priceBasis,
         validity: finalData.validity,
       })
-      .then((resp) => console.log(resp))
-      .catch((e) => console.log(e));
+      // .then((resp) => console.log(resp))
+      // .catch((e) => console.log(e));
 
     navigate("/submit");
     window.location.reload();

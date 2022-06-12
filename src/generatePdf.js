@@ -13,7 +13,7 @@ import autoTable from 'jspdf-autotable'
 var data = {}
 
 function fetchData() {
-  axios.get("https://pdf-converter0.herokuapp.com/api").then((res) => {
+  axios.get("https://pdf-converter0.herokuapp.com/api/").then((res) => {
     res.data.forEach((element) => {
       if (element.refNo === localStorage.getItem("refNo")) {
         data = element;
