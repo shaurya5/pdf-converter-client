@@ -21,7 +21,7 @@ function LoginPage() {
 
   async function validateUser() {
     try {
-      let users = await axios.get('http://localhost:5000/api/users')
+      let users = await axios.get('https://pdf-converter0.herokuapp.com/api/users')
       for(let i=0; i<users.data.length; i++){
         if(users.data[i].companyEmail === userData.email){
           if(users.data[i].password === userData.password){

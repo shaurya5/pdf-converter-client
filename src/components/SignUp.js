@@ -38,7 +38,7 @@ function SignUp() {
     fieldValidation()
 
     await axios
-      .post("http://localhost:5000/users", {
+      .post("https://pdf-converter0.herokuapp.com/users", {
         companyEmail: userData.companyEmail,
         phone: userData.phone,
         companyName: userData.companyName,
