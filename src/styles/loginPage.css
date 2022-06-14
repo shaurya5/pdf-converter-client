@@ -1,0 +1,31 @@
+form {
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  width: 30rem;
+}
+
+.color-overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: normal;
+}
+
+a {
+  font-size: 14px;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 420px){
+  form {
+    /* width: 20rem; */
+    /* height: max-content; */
+    margin-top: 30px;
+  }
+}
