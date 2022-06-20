@@ -17,7 +17,7 @@ function fetchData() {
     res.data.forEach((element) => {
       if (element.refNo === localStorage.getItem("refNo")) {
         data = element;
-        console.log(data)
+        // console.log(data)
       }
     });
   });
